@@ -1,0 +1,99 @@
+:root {
+    --bg: linear-gradient(135deg, #1f4037, #99f2c8);
+    --card: rgba(255, 255, 255, 0.25);
+    --text: #ffffff;
+    --btn: #ffffff;
+}
+
+body.light {
+    --bg: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    --card: #ffffff;
+    --text: #000000;
+    --btn: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+.app {
+    background: var(--card);
+    backdrop-filter: blur(10px);
+    padding: 24px;
+    border-radius: 18px;
+    width: 92%;
+    max-width: 420px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search {
+    display: flex;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.search input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.search button {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.main-weather {
+    text-align: center;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .app {
+        max-width: 480px;
+    }
+
+    .temperature {
+        font-size: 56px;
+    }
+}

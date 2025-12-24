@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <!-- Dark / Light Toggle -->
+        <button id="themeToggle" title="Toggle Dark / Light">🌙</button>
+
+        <h1>🌦 Weather App</h1>
+
+        <!-- Search -->
+        <div class="search">
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Enter city name"
+            >
+            <button onclick="searchCity()">Search</button>
+        </div>
+
+        <!-- Weather Box -->
+        <div class="weather-box">
+            <h2 id="location">--</h2>
+
+            <p class="temp" id="temp">--°C</p>
+            <p id="condition">--</p>
+
+            <div class="details">
+                <p>💧 Humidity: <span id="humidity">--</span>%</p>
+                <p>🌅 Sunrise: <span id="sunrise">--</span></p>
+                <p>🌇 Sunset: <span id="sunset">--</span></p>
+                <p>🌫 AQI: <span id="aqi">--</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
