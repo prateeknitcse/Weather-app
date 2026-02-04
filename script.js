@@ -1,6 +1,4 @@
-require("dotenv").config();
-
-const AQI_KEY = process.env.AQI_KEY;
+const AQI_KEY = "c1bca8df0bfb5b4328954e44ebbf02d9";
 
 let currentCity = "";
 
