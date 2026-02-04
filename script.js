@@ -1,4 +1,4 @@
-const AQI_KEY = "c1bca8df0bfb5b4328954e44ebbf02d9";
+const AQI_KEY = "freemekuchnahimilta";
 
 let currentCity = "";
 
@@ -116,5 +116,6 @@ toggle.onclick = () => {
     toggle.innerText = isLight ? "☀️" : "🌙";
     localStorage.setItem("theme", isLight ? "light" : "dark");
 };
+
 
 
