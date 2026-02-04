@@ -1,5 +1,7 @@
+require("dotenv").config();
 
-const AQI_KEY = "c1bca8df0bfb5b4328954e44ebbf02d9";
+const AQI_KEY = process.env.AQI_KEY;
+
 let currentCity = "";
 
 window.onload = () => {
@@ -116,4 +118,5 @@ toggle.onclick = () => {
     toggle.innerText = isLight ? "☀️" : "🌙";
     localStorage.setItem("theme", isLight ? "light" : "dark");
 };
+
 
